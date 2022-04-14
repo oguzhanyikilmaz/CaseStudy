@@ -22,6 +22,8 @@ The project should be started by selecting multiple startup projects from the So
 - The code is created according to the determined rule.
 - Rule : The 3rd digit from the beginning is odd number, the second from the last digit is even number, the first digit and the last digit must be letters and lowercase. (All must be from the given character set.)
 - Swagger Dashboard: https://localhost:44319/swagger 
+- Authanticate information is located below
+   - UserName="Oguzhan" - Password="1234" OR UserName="CaseStudy" - Password="12345"
 
 * Method names are shown in bold.
 
