@@ -1,5 +1,5 @@
 {
-  "CaseStudyApiHost": "http://localhost:44319/api/v1",
+  "CaseStudyApiHost": "http://localhost:44319/api",
   //"IdentityServerHost": "",
 
   "MvcHost": "#{CLIENT_URL}#"
