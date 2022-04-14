@@ -1,4 +1,5 @@
-﻿using CaseStudy.Business.Models;
+﻿using CaseStudy.Business.Abstract;
+using CaseStudy.Business.Models;
 using CaseStudy.Web.Models;
 using CaseStudy.Web.Refit.Dependency;
 using Microsoft.AspNetCore.Mvc;
@@ -16,20 +17,22 @@ namespace CaseStudy.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private IReceiptService _receiptService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IReceiptService receiptService)
         {
             _logger = logger;
+            _receiptService = receiptService;
         }
 
         public  IActionResult Index()
         {
-            var response =  RefitApiServiceDependency.ReceiptApi.GetReceipt();
+            var response = _receiptService.ConvertJsonReceiptModel();
 
-            var result = response.Result;
-            if (response.Exception == null)
+            
+            if (response != null && response.Count>0)
             {
-                return View(result);
+                return View(response.First().Description.Split("\n").Where(x => !string.IsNullOrEmpty(x)).ToList());
             }
             else
             {
