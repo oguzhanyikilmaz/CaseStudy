@@ -19,7 +19,7 @@ namespace CaseStudy.Business.Concrete
         {
             new User
             {
-               UserName="Kaizen",
+               UserName="Oguzhan",
                 Password="1234"
             },
             new User
