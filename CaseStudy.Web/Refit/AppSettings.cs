@@ -7,7 +7,7 @@ namespace CaseStudy.Web.Refit
 {
     public class AppSettings
     { 
-        public static string NewsAppApiHost { get; set; }
+        public static string CaseStudyApiHost { get; set; }
 
     }
 }
