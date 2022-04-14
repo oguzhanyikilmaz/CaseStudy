@@ -7,9 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB02F8CC-074
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{33F92A2B-9BDE-4927-8807-7F59F230992C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Business", "CaseStudy.Business\CaseStudy.Business.csproj", "{C76F4979-2A48-4EBE-8E5F-99D3E340F1EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Business", "CaseStudy.Business\CaseStudy.Business.csproj", "{C76F4979-2A48-4EBE-8E5F-99D3E340F1EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Api", "CaseStudy.Api\CaseStudy.Api.csproj", "{2DF60DD0-DB24-4FF7-BB45-E9FAA30BC7DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Api", "CaseStudy.Api\CaseStudy.Api.csproj", "{2DF60DD0-DB24-4FF7-BB45-E9FAA30BC7DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Web", "CaseStudy.Web\CaseStudy.Web.csproj", "{99BF09A1-A8B6-41B3-BFB3-F8C58B01BDD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{2DF60DD0-DB24-4FF7-BB45-E9FAA30BC7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DF60DD0-DB24-4FF7-BB45-E9FAA30BC7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DF60DD0-DB24-4FF7-BB45-E9FAA30BC7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BF09A1-A8B6-41B3-BFB3-F8C58B01BDD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BF09A1-A8B6-41B3-BFB3-F8C58B01BDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BF09A1-A8B6-41B3-BFB3-F8C58B01BDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BF09A1-A8B6-41B3-BFB3-F8C58B01BDD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C76F4979-2A48-4EBE-8E5F-99D3E340F1EF} = {CB02F8CC-074B-4AF4-9628-672FC4057A01}
 		{2DF60DD0-DB24-4FF7-BB45-E9FAA30BC7DD} = {CB02F8CC-074B-4AF4-9628-672FC4057A01}
+		{99BF09A1-A8B6-41B3-BFB3-F8C58B01BDD9} = {CB02F8CC-074B-4AF4-9628-672FC4057A01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40FF3F58-BD4E-470E-84DB-1A271A5F5AE3}

@@ -14,6 +14,10 @@ namespace CaseStudy.Business.Concrete
         {
             var charCode = code.ToCharArray();
             bool retVal = true;
+            if (code.Length!=8)
+            {
+               return retVal = false;
+            }
             for (int i = 0; i < charCode.Length; i++)
             {
 
@@ -127,12 +131,14 @@ namespace CaseStudy.Business.Concrete
 
             return finalString;
         }
-
+        /// <summary>
+        /// Belirlenen kurala göre kod oluşturulur. 
+        /// Kural: Baştan 3. hane tek sayı sondan ikinci hane çift sayı ilk hane ve son hane harf ve küçük olmalı. (Tamamı verilen karakter kümesinden olmalı.)
+        /// </summary>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public List<string> GenerateCodes(int count)
         {
-            //Baştan 3. hane tek sayı
-            //Sondan 2. hane tek sayı
-            //ilk hane ve son hane küçük harf olmali
             List<string> codes = new List<string>();
 
             for (int i = 0; i < count; i++)

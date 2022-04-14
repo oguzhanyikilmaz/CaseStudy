@@ -1,4 +1,5 @@
 ﻿using CaseStudy.Business.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace CaseStudy.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CodeController : ControllerBase
@@ -31,7 +33,6 @@ namespace CaseStudy.Api.Controllers
             }
                        
         }
-
         [HttpGet("CheckCode/{code}")]
         public bool CheckCode(string code)
         {

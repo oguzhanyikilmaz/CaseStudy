@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,6 +68,13 @@ namespace CaseStudy.Business.Helper
             }
 
             return retVal;
+        }
+
+        public static string GetFilePath()
+        {
+            var file = Directory.GetParent("~\response.json");
+            var path = file.Parent+ @"\CaseStudy.Web\wwwroot\response.json";
+            return path;
         }
     }
 }
