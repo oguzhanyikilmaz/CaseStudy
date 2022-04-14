@@ -77,7 +77,7 @@ namespace CaseStudy.Web.Refit.Dependency
             var config = configBuilder.Build();
             services.Configure<AppSettings>(config);
 
-            var baseaddress = new Uri("http://localhost:44319/api/v1");
+            var baseaddress = new Uri("http://localhost:44319/api");
 
             services.AddRefitClient<IReceiptApi>()
             .ConfigureHttpClient(c =>
