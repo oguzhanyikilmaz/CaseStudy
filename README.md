@@ -21,6 +21,7 @@ The project should be started by selecting multiple startup projects from the So
 - **CheckCode** method should be used for code validity control.
 - The code is created according to the determined rule.
 - Rule : The 3rd digit from the beginning is odd number, the second from the last digit is even number, the first digit and the last digit must be letters and lowercase. (All must be from the given character set.)
+- Swagger Dashboard: https://localhost:44319/swagger 
 
 * Method names are shown in bold.
 
