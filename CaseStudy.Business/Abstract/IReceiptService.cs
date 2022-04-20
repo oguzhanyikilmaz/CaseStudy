@@ -9,6 +9,6 @@ namespace CaseStudy.Business.Abstract
 {
   public  interface IReceiptService
     {
-        List<Receipt> ConvertJsonReceiptModel();
+        string[] ConvertJsonReceiptModel();
     }
 }

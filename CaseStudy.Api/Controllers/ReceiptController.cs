@@ -22,7 +22,7 @@ namespace CaseStudy.Api.Controllers
         [HttpGet]
         public List<string> GetReceipt()
         {
-            return _receiptService.ConvertJsonReceiptModel().First().Description.Split("\n").Where(x => !string.IsNullOrEmpty(x)).ToList();
+            return _receiptService.ConvertJsonReceiptModel().ToList();
         }
     }
 }

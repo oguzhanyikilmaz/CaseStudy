@@ -10,7 +10,7 @@ namespace CaseStudy.Web.Refit.Interfaces
 
     public interface IReceiptApi
     {
-        [Get("/GetReceipt")]
+        [Get("/Receipt/GetReceipt")]
         Task<List<string>> GetReceipt();
     }
 }

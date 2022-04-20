@@ -30,9 +30,9 @@ namespace CaseStudy.Web.Controllers
             var response = _receiptService.ConvertJsonReceiptModel();
 
             
-            if (response != null && response.Count>0)
+            if (response != null)
             {
-                return View(response.First().Description.Split("\n").Where(x => !string.IsNullOrEmpty(x)).ToList());
+                return View(response);
             }
             else
             {
